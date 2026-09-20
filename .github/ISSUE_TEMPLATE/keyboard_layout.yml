@@ -1,0 +1,56 @@
+name: Add a keyboard to the library
+description: Offer the F-key layout of a keyboard, so it sets up in one click
+labels: ["keyboard layout"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The library only holds layouts that are checked on the real keyboard or
+        taken from the maker's own documentation. No layout is a guess, so
+        please only send one for a keyboard you have in front of you, or one
+        the maker documents.
+  - type: input
+    id: keyboard
+    attributes:
+      label: Keyboard
+      description: The full name as the maker writes it.
+      placeholder: "Logitech MX Keys S"
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Where the layout comes from
+      options:
+        - I have this keyboard and checked every key
+        - The maker's user guide or support page (please link it below)
+    validations:
+      required: true
+  - type: textarea
+    id: row
+    attributes:
+      label: What each key does
+      description: >
+        F1 to F12, one per line, saying what is printed on the key. Write
+        "nothing" for a plain F-key, and say if a key is handled by the
+        keyboard itself (backlight, Easy-Switch, Wi-Fi, the maker's app).
+      placeholder: |
+        F1 = brightness down
+        F2 = brightness up
+        F3 = mic mute
+        ...
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to the maker's documentation
+      description: If the layout comes from a user guide or support page.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything unusual
+      description: >
+        An Fn Lock that has to be set per channel, keys that only work with Fn
+        held, keys that never reach Windows, and so on.

@@ -1,0 +1,10 @@
+# Release files live on the Releases page, not in the repository.
+*.exe
+*.zip
+*.msi
+
+# Editors and OS clutter
+.vs/
+.vscode/
+Thumbs.db
+desktop.ini

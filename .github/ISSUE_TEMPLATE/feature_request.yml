@@ -1,0 +1,21 @@
+name: Suggest something
+description: A shortcut, an app, or a change to how SceneKeys works
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like SceneKeys to do
+      description: >
+        If you're asking for a new shortcut, say what it should send. If you're
+        asking for an app to be added to the ones SceneKeys knows, say which
+        F-keys that app uses and what each one does there.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What are you trying to get done
+      description: >
+        The situation it would help with. This often points to a simpler answer
+        than the one that first comes to mind.

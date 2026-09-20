@@ -1,0 +1,58 @@
+name: Something doesn't work
+description: An F-key does the wrong thing, or SceneKeys misbehaves
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Tray → **Diagnostics** shows what SceneKeys thinks
+        is going on: the keyboard in use, the app in front, and which rule
+        decided the last key press. That answers most of the questions below.
+  - type: input
+    id: version
+    attributes:
+      label: SceneKeys version
+      description: The name of the file you downloaded.
+      placeholder: "0.9.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: Press Win+R, type winver, and copy the version line.
+      placeholder: "Windows 11 24H2 (26100.1742)"
+    validations:
+      required: true
+  - type: input
+    id: keyboard
+    attributes:
+      label: Keyboard
+      description: The make and model, and whether it's a laptop's own keyboard.
+      placeholder: "Logitech MX Keys Mini, Bluetooth"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Which key, in which app, what it did, and what you expected.
+      placeholder: |
+        F5 in Chrome with a video playing sends F5 instead of turning the volume down.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: >
+        Tray → Diagnostics, while the problem is happening. Copy what it says
+        about the app in front, the keyboard in use and the last key press.
+      render: text
+  - type: checkboxes
+    id: fnlock
+    attributes:
+      label: Before you send
+      options:
+        - label: My keyboard is set to send F-keys first (Fn Lock on, or Fn+Esc)
+        - label: I checked the key's setting in Settings

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/findliujie-KL/SceneKeys/discussions
+    about: For anything that isn't a bug report or a request.
+  - name: Security and privacy
+    url: https://github.com/findliujie-KL/SceneKeys/security/policy
+    about: Please report anything security related privately, not in an issue.
