@@ -1,5 +1,8 @@
 # SceneKeys
 
+<img src="docs/banner.webp" width="100%"
+     alt="The function row of a laptop keyboard. F2 is split in two: its lit half reads F2 and sends a beam up to a File Explorer window where a folder is being renamed, while its dark half, brightness up, waits. F6 is split the other way: its lit half, volume up, sends a beam to a music player that is playing, while its dark half reads F6.">
+
 **Scene-aware function keys for Windows.** A small tray app that decides what
 each of `F1`–`F12` should do *right now*: the shortcut set for the key, or the
 standard F-key that the app in front expects.
