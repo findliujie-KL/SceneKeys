@@ -18,6 +18,11 @@ about 200 KB.
 
 > **Status: early.** Version numbers start at 0.9. It works on the machines it
 > has been tested on; your keyboard may need setting up by hand.
+>
+> **Each build runs until a set date** — 30 November 2026 for this one. After
+> that it stops changing your F-keys and points you back here for the newer
+> version. Nothing breaks: your keys simply behave as ordinary F-keys again, and
+> your settings are kept. See [How long a build lasts](#how-long-a-build-lasts).
 
 ---
 
@@ -35,6 +40,24 @@ Windows 10 (May 2019 update) and Windows 11.
 
 Windows may warn that the publisher is unknown, because the downloads are not
 signed with a paid certificate yet. See [Is it safe?](#is-it-safe) below.
+
+---
+
+## How long a build lasts
+
+SceneKeys is early, and changing fast, so each build has a date written into it
+and stops changing keys after it. This one runs until **30 November 2026**.
+
+- **For the last two weeks**, Settings shows a line saying when it stops, and
+  the notification area says so once a day. Both link back to this page.
+- **From that day**, `F1`–`F12` go back to being ordinary F-keys. SceneKeys
+  keeps running with a grey icon, your settings are untouched, and it offers to
+  open this page once each time it starts.
+- **Downloading the newer version** picks up your settings exactly as they were.
+
+There is no licence check, no account and no phone-home: the date is simply
+built into the program, which is why SceneKeys can say it makes no network
+connections at all. It stays free.
 
 ---
 
@@ -82,11 +105,16 @@ undo/redo, find, zoom, browser back/forward, Insert, Delete, Home, End, and
 about 55 more — or any key combination you press into the recorder, such as
 `Ctrl`+`Shift`+`T`.
 
-**Per app, per key:** each app gets a row where every F-key is one of two
-things: the keyboard's shortcut, or the app's own F-key, named for what it does
-there (*Reload* in Chrome, *Rename* in File Explorer, *Save As* in Word).
+**Per app, per key:** each app gets a row where every F-key is one of three
+things: the keyboard's shortcut, the app's own F-key named for what it does
+there (*Reload* in Chrome, *Rename* in File Explorer, *Save As* in Word), or a
+shortcut you give that app alone — handy when one app's F-key is wasted on you.
 SceneKeys knows the F-keys of about 50 common apps, so a newly added app starts
-out right. The desktop has its own row, separate from File Explorer windows.
+out right. The desktop has its own row, separate from File Explorer windows, and
+an app you don't want listed can be hidden.
+
+**English and Simplified Chinese** (简体中文), chosen in Settings or followed
+from Windows. A short guide opens the first time and from the tray menu after.
 
 **Fn Lock:** set your keyboard to send F-keys first, so SceneKeys sees every
 press. On a Logitech keyboard it can do this for you, without Logitech's
@@ -106,7 +134,9 @@ one is held. Letters, numbers, passwords and everything else pass through
 untouched and are never read, stored or counted.
 
 **Nothing leaves your PC.** SceneKeys has no network code at all. It never
-connects to anything, sends no statistics, and has no update check.
+connects to anything, sends no statistics, and has no update check. The date a
+build stops on is built into it, not checked with a server; opening the download
+page only happens when you click the link.
 
 **It stores** one plain text file, `settings.ini`: your keyboards, your
 shortcuts, and which F-keys each app uses. Nothing else. You can read it in
