@@ -86,6 +86,8 @@ and nothing to hold down.
 **Playback shortcuts** are brightness, volume, mute, mic mute and previous,
 play/pause and next track. Only these win over an app's own keys while it
 plays, so `F11` still makes a video fullscreen instead of taking a screenshot.
+They also win over a shortcut you gave that app alone: with `F6` set to
+`Ctrl`+`D` in Chrome, `F6` is still volume up while a video plays.
 
 **"Playing"** comes from Windows' own media controls, the same place the volume
 flyout's play/pause panel gets it. A paused video isn't playing, and a
@@ -96,30 +98,43 @@ notification sound doesn't count.
 ## Setting it up
 
 SceneKeys asks the first time it runs, and whenever a keyboard it doesn't know
-connects. A searchable library fills in all twelve keys for keyboards it knows,
-and any key can be changed afterwards.
+connects. It says which keyboard it is setting up, then takes two steps:
+
+1. **Press `F5` three times.** This checks the keyboard sends F-keys first
+   (Fn Lock on most laptops); setup goes on only once it does.
+2. **Say what's printed on each key**, by hand or from a preset you choose.
+   SceneKeys never picks a preset for you from the keyboard's name.
 
 **Keyboards checked on real hardware:** Huawei MateBook X, Logitech K780,
 Logitech MX Keys Mini. **From the maker's documentation:** Lenovo ThinkPad X1
 Carbon Gen 12, ThinkPads from 2017, Apple Magic Keyboard. Anything else is set
-up by hand, which takes a minute. No layout in the library is a guess.
+up by hand, which takes a minute. No preset is a guess.
+
+**Keys the keyboard does itself** — keyboard backlight, Wi-Fi, Easy-Switch, the
+maker's own app, or anything else you name — can be marked as printed on the
+key. SceneKeys can't do those, and says so: pressed alone the key sends its
+F-key, and with Fn held the keyboard does what's printed.
 
 **Any key can have any shortcut:** volume and media, brightness, project,
 Task View, show desktop, lock, screen snip, voice typing, emoji, copy/paste,
 undo/redo, find, zoom, browser back/forward, Insert, Delete, Home, End, and
 about 55 more — or any key combination you press into the recorder, such as
-`Ctrl`+`Shift`+`T`.
+`Ctrl`+`Shift`+`T`, or **open an app** of your choosing, such as the maker's
+own (Huawei PC Manager, Lenovo Vantage).
 
 **Per app, per key:** each app gets a row where every F-key is one of three
 things: the keyboard's shortcut, the app's own F-key named for what it does
 there (*Reload* in Chrome, *Rename* in File Explorer, *Save As* in Word), or a
 shortcut you give that app alone — handy when one app's F-key is wasted on you.
-SceneKeys knows the F-keys of about 50 common apps, so a newly added app starts
-out right. The desktop has its own row, separate from File Explorer windows, and
-an app you don't want listed can be hidden.
+SceneKeys knows the F-keys of about 50 common apps and keeps them for those
+apps with nothing to set up, even ones already open when SceneKeys starts. The
+desktop has its own row, separate from File Explorer windows, and an app you
+don't want listed can be hidden.
 
 **English and Simplified Chinese** (简体中文), chosen in Settings or followed
-from Windows. A short guide opens the first time and from the tray menu after.
+from Windows. A short guide opens the first time, with its own language switch,
+and comes back each start until a keyboard is set up; it's in the tray menu
+after that.
 
 **Fn Lock:** set your keyboard to send F-keys first, so SceneKeys sees every
 press. On a Logitech keyboard it can do this for you, without Logitech's
@@ -163,8 +178,8 @@ flags it, that is a false positive caused by the keyboard hook; please
 
 ## Questions
 
-**Does it work with any keyboard?** Yes. Keyboards in the library are set up in
-one click; any other keyboard is set up by hand, one key at a time.
+**Does it work with any keyboard?** Yes. Choose a preset if yours is in the
+list; any other keyboard is set up by hand, one key at a time.
 
 **Does it change my keyboard's firmware?** Only for Logitech keyboards that
 store their F-row mode, and only when you turn that option on. It sends the
