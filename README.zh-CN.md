@@ -101,9 +101,17 @@ Chrome 里的 `F5` 依然刷新。不用记新规则，也不用一直按住某�
 2. **说明每个键上印着什么**，可以手动设置，也可以选择一个预设。SceneKeys 不会根据
    键盘名称替你猜预设。
 
-**已在真机上核对过的键盘：** 华为 MateBook X、罗技 K780、罗技 MX Keys Mini。
-**来自厂商文档：** 联想 ThinkPad X1 Carbon Gen 12、2017 年后的 ThinkPad、Apple
-Magic Keyboard。其他键盘手动设置一次即可，大约一分钟。没有任何一个预设是猜的。
+**33 款键盘的预设**，按厂商列出，并画出每个预设的按键，方便选择前与你的键盘对照：
+
+- **笔记本：** 戴尔 XPS、Latitude、Precision · 联想 ThinkPad、IdeaPad、ThinkBook ·
+  惠普 EliteBook、ProBook · 华硕 ExpertBook、Zenbook、Vivobook · 华为 MateBook ·
+  荣耀 MagicBook · 三星 Galaxy Book · 微软 Surface Laptop
+- **键盘：** 罗技 MX Keys、MX Keys S、MX Keys Mini、K380、Pebble Keys 2、K780、
+  Signature K650 和 K950、Wave Keys、ERGO K860 · 微软蓝牙键盘、Designer Compact 和
+  Surface 键盘 · Apple 妙控键盘 · Keychron K 系列
+
+每个预设都来自厂商标明 F 键编号的手册或图片，或来自真实的键盘。少数无法这样核对的，
+选择时会注明。其他键盘手动设置一次即可，大约一分钟。
 
 **键盘自己完成的功能** —— 键盘背光、Wi-Fi、Easy-Switch、厂商自己的应用，或者你
 自己命名的其他功能 —— 可以标记为“键上印的功能”。SceneKeys 做不了这些，也会如实
@@ -118,8 +126,9 @@ Lenovo Vantage）。
 **逐应用、逐键选择：** 每个应用占一行，行中的每个键有三种选择：使用键盘的快捷功能、
 使用应用本身对该键的功能（在 Chrome 中是*刷新*，在文件资源管理器中是*重命名*，在
 Word 中是*另存为*），或者只给这个应用单独设置一个快捷功能 —— 当某个应用白白占用了
-一个 F 键时很有用。SceneKeys 内置了约 50 个常用应用的 F 键功能，并会自动为这些应用
-保留，无需任何设置，即使应用在 SceneKeys 启动前就已打开。桌面有单独的一行，与文件
+一个 F 键时很有用。SceneKeys 内置了约 55 个常用应用的 F 键功能（包括 Everything，
+以及 Total Commander、Directory Opus、XYplorer、FreeCommander 等文件管理器），并会
+自动为这些应用保留，无需任何设置，即使应用在 SceneKeys 启动前就已打开。桌面有单独的一行，与文件
 资源管理器窗口分开；不想看到的应用可以隐藏。
 
 **中英文界面**（简体中文 / English），可在设置中选择，也可以跟随 Windows。首次运行

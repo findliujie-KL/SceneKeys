@@ -105,10 +105,19 @@ connects. It says which keyboard it is setting up, then takes two steps:
 2. **Say what's printed on each key**, by hand or from a preset you choose.
    SceneKeys never picks a preset for you from the keyboard's name.
 
-**Keyboards checked on real hardware:** Huawei MateBook X, Logitech K780,
-Logitech MX Keys Mini. **From the maker's documentation:** Lenovo ThinkPad X1
-Carbon Gen 12, ThinkPads from 2017, Apple Magic Keyboard. Anything else is set
-up by hand, which takes a minute. No preset is a guess.
+**Presets for 33 keyboards**, listed by maker, with each preset's keys drawn so
+you can compare them with yours before choosing:
+
+- **Laptops:** Dell XPS, Latitude and Precision · Lenovo ThinkPad, IdeaPad and
+  ThinkBook · HP EliteBook and ProBook · ASUS ExpertBook, Zenbook and Vivobook ·
+  Huawei MateBook · Honor MagicBook · Samsung Galaxy Book · Microsoft Surface Laptop
+- **Keyboards:** Logitech MX Keys, MX Keys S, MX Keys Mini, K380, Pebble Keys 2,
+  K780, Signature K650 and K950, Wave Keys, ERGO K860 · Microsoft Bluetooth,
+  Designer Compact and Surface keyboards · Apple Magic Keyboard · Keychron K series
+
+Each comes from the maker's own manual or picture with the F-keys numbered, or
+from a real keyboard. The few that couldn't be checked that way say so when you
+pick them. Anything else is set up by hand, which takes a minute.
 
 **Keys the keyboard does itself** — keyboard backlight, Wi-Fi, Easy-Switch, the
 maker's own app, or anything else you name — can be marked as printed on the
@@ -126,8 +135,10 @@ own (Huawei PC Manager, Lenovo Vantage).
 things: the keyboard's shortcut, the app's own F-key named for what it does
 there (*Reload* in Chrome, *Rename* in File Explorer, *Save As* in Word), or a
 shortcut you give that app alone — handy when one app's F-key is wasted on you.
-SceneKeys knows the F-keys of about 50 common apps and keeps them for those
-apps with nothing to set up, even ones already open when SceneKeys starts. The
+SceneKeys knows the F-keys of about 55 common apps, including Everything and
+file managers such as Total Commander, Directory Opus, XYplorer and FreeCommander,
+and keeps them for those apps with nothing to set up, even ones already open when
+SceneKeys starts. The
 desktop has its own row, separate from File Explorer windows, and an app you
 don't want listed can be hidden.
 
